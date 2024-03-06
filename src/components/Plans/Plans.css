@@ -1,0 +1,126 @@
+.Plans-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+}
+
+.Plans-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Plans-header{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3rem;
+    text-transform: uppercase;
+    
+}
+.plans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    /* align-items: center; */
+    width: 15rem;
+    color: white;
+    background: var(--caloryCard);
+    padding: 15px 30px;
+
+}
+.plan:nth-child(2){
+    background: var(--planCard);
+    transform: scale(1.1) ;
+}
+
+.plan>svg{
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+.plan>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+.plan>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+}.plan>:nth-child(5){
+    font-size: 0.8rem;
+    /* font-weight: bold; */
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.feature>img{
+    width: 1rem;
+}
+
+.plans>:nth-child(2)>svg{
+    fill: white;
+}
+.plan>.btn{
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+}
+.plans>:nth-child(2)>button{
+    color: var(--orange);
+
+    
+}
+
+
+.plan-blur-1{
+    width: 32rem;
+    height: 23rem;
+    top: 5rem;
+    left: 2rem;
+}
+
+.plan-blur-2{
+    width: 32rem;
+    height: 23rem;
+    top: 5rem;
+    right: 4rem;
+}
+
+
+@media screen and  (max-width : 768px){
+    .Plans-container{
+        transform: scale(0.5);
+        gap: 10rem;
+        margin-top: -27rem;
+    }
+    .Plans-header{
+        flex-direction: column;
+        gap: 1rem;
+        transform: scale(1.5);
+        /* margin-left: 2rem; */
+        text-align: center;
+    }
+    .plans{
+        margin-top: 20rem;
+        flex-direction: column;
+        transform: scale(1.5);
+    }
+    
+
+}

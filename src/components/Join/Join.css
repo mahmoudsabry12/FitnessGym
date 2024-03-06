@@ -1,0 +1,91 @@
+.Join{
+    display: flex;
+    gap: 10rem;
+    padding: 0 2rem ;
+    
+}
+
+.left-j{
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    text-transform: capitalize;
+    position: relative;
+    flex: 1;
+}
+
+.left-j>hr{
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid var(--orange) ;
+    border-radius: 25px;
+    margin: -12px 0;
+}
+
+.left-j>div{
+    gap: 1rem;
+    display: flex;
+
+}
+
+.right-j{
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: center;
+   
+}
+
+.email-container{
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    gap: 3rem;
+    background-color: gray;
+    padding: 1rem 2rem;
+}
+
+.email-container>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgrayz);
+}
+
+::placeholder{
+    color: var(--lightgray);
+}
+.btn-j{
+    background-color: var(--orange);
+    color: white;
+    padding: 10px 15px;
+    border: none ;
+}
+
+@media screen and  (max-width : 768px){
+    .Join{
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 22rem;
+        
+        
+    }
+    .left-j{
+        gap: 0.5rem;
+    }
+    .left-j>div{
+        /* flex-direction: column; */
+        align-items: center;
+        margin-bottom: 0.5rem;
+        font-size: 36px;
+    }
+
+    .right-j{
+        transform: scale(0.7);
+        /* width: 16rem; */
+    }
+    .btn-j{
+        width: 8rem;
+    }
+
+}
